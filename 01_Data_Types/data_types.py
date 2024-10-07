@@ -5,7 +5,8 @@ def boolean():
     Using the variable below, give it the value 'True', then print it.
     """
     # enter your code here
-    staying_alive = None
+    staying_alive = True
+    print(staying_alive)
 
 
 def integer():
@@ -17,6 +18,11 @@ def integer():
 
     num1 = int(input("Enter first number\n"))
     num2 = int(input("Enter second number\n"))
+
+    product = num1 * num2
+    print(f"Product: {product}")
+    return product
+    
 
     # enter your code here
 
@@ -30,7 +36,8 @@ def string():
 
     # enter your code here
 
-    your_name = None
+    your_name = "Onalerona"
+    print(your_name)
 
 
 def convert_to_float():
@@ -41,6 +48,9 @@ def convert_to_float():
     """
 
     int_num = 60
+    int_num = float(60)
+    print(int_num)
+
 
     #enter your code here
 
@@ -61,6 +71,8 @@ def all_data_types():
     int_year = 2023
     float_cost = 0.00
 
+    print(f"{string_one}{string_two}{string_3}{bool_condition}{int_year}{float_cost}  ")
+
     #enter your code here
 
 
@@ -68,8 +80,9 @@ if __name__ == "__main__":
     """
     Run the entire program from here
     """
-    # boolean()
-    # integer()
-    # string()
-    # convert_to_float()
-    # all_data_types()
+    boolean()
+    integer()
+    string()
+    convert_to_float()
+    all_data_types()
+

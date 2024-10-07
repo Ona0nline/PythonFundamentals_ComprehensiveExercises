@@ -12,8 +12,13 @@ def all_numbers():
     '0 1 4'
     """
 
-    num1 = int(input())
-    num2 = int(input())
+    num1 = int(input("Enter a number: "))
+    num2 = int(input("ENter a second number: "))
+
+    for index in range(0,5):
+        if num1 in range(0,5) and num2 in range(0,5):
+            print(index)
+
 
     #enter your code here
 
@@ -31,6 +36,18 @@ def dog_years():
     """
 
     h_age = int(input("Input a dog's age in human years: \n"))
+    d_age_initial = h_age * 5.25
+    d_age_final = h_age * 4
+
+    if h_age <= 2:
+        print(f"The dog's age in dog's years is {d_age_initial} " )
+
+    elif h_age >= 2 and h_age <= 20:
+        print(f"The dog's age in dog's years is {d_age_final} ")
+
+    else:
+        print("Please try again")
+        
 
     #enter your code here
 
@@ -48,6 +65,8 @@ def consonant_or_vowel():
     """
 
     l = input("Input a letter of the alphabet: ")
+    # Intend to use ASCII table
+
 
     #enter your code here
 
@@ -66,6 +85,16 @@ def month_numbers():
 
     print("List of months: January, February, March, April, May, June, July, August, September, October, November, December")
     month_name = input("Input the name of Month: ")
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    if month_name == months[1]:
+        print("28/29 days")
+
+    for month in months:
+        if month_name == month and month % 2 == 0:
+            print("31 days")
+
+        else: 
+            print("30 days")
 
     #enter your code here
 
@@ -146,8 +175,8 @@ if __name__ == "__main__":
     Run the entire program from here
     """
     # all_numbers()
-    # dog_years()
+    dog_years()
     # consonant_or_vowel()
-    # month_numbers()
+    month_numbers()
     # pyramids()
     # fibonacci()
